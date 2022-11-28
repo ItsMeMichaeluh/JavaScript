@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       
+    function nakijken (){
+        
+       let vraag1=document.getElementById("vraag1").value
+        if(vraag1 == "madrid"){
+            alert("1 is goed!")
+                
+        }
+       else{
+            alert("1 is fout :(")
+        }
+        let vraag2=(document.getElementById("vraag2").value)
+        if(vraag2 == "middelandsze zee"){
+            alert("2 is goed!")
+                
+        }
+        else{
+            alert("2 is fout :(")
+        }
+        let vraag3=(document.getElementById("vraag3").value)
+        if(vraag3 == 15){
+            alert("3 is goed!")
+             
+        }
+        else{
+            alert("3 is fout :(")
+        }
+      
+
+        }
+    
+</script>
+</head>
+<body>
+
+ 
+
+
+    <label for="getal">vraag 1: wat is de hoofdstad van spanje?</label><br>
+        <input type="text" id="vraag1"><br>
+
+   <label for="getal">vraag 2: in welke zee ligt het eiland mallorca</label><br>
+        <input type="text" id="vraag2"><br>
+    
+    <label for="text">vraag 3: hoeveel paar poten heeft een duizenpoot?</label><br>
+        <input type="number" id="vraag3"><br>
+
+    <input type="button" value="Controleer antwoorden"
+    onclick="nakijken()"
+     />
+
+
+   
+    
+</body>
+</html>

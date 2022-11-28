@@ -1,0 +1,42 @@
+
+ <!DOCTYPE html>
+ <html lang="nl">
+ <head>
+ <meta charset="UTF-8">
+ <title>Interactieve HTML</title>
+ <script>
+ 
+ function checkForm(){
+ let getal1 = Number(document.getElementById("getal1")
+ .value);
+ let getal2 = Number(document.getElementById("getal2")
+ .value);
+ if(getal1 && getal2 < 0 || getal1 && getal2 >=10){
+ alert("Het ingevulde getal is onjuist...");
+ }else{
+ alert("Het ingevulde getal is juist...");
+  let totaal = getal1+getal2;
+  alert (totaal);
+ }
+ }
+ 
+ </script>
+ </head>
+
+ <body>
+ <h1>Oefenen met JavaScript</h1>
+
+ Vul een getal tussen 0 en 10 in:
+ <br /><br />
+ <label for="getal">Getal:</label><br>
+ <input type="number" id="getal1"><br>
+ <input type="number" id="getal2"><br>
+ <br />
+
+<input type="button" value="Controleer getal"
+onclick="checkForm()"
+ />
+
+
+ </body>
+ </html>
